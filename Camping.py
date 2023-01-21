@@ -26,4 +26,11 @@ camping_list.insert(0, "arrow")
 camping_list.insert(-1, "pan")
 
 
+
+camping_list.remove("tent")
+
+camping_list.pop(9)
+
+print(camping_list.pop(8))
+
 print(camping_list)
