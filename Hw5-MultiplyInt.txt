@@ -1,4 +1,0 @@
-def multiply():
-    multiply = a * b 
-
-print(multiply)
