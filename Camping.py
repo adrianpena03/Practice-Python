@@ -34,3 +34,4 @@ camping_list.pop(9)
 print(camping_list.pop(8))
 
 print(camping_list)
+
