@@ -6,4 +6,3 @@ elif 20 <= a <= 100:
     print("Average")
 elif a <= 20:
     print("Small")
-
