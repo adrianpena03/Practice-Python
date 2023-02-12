@@ -103,3 +103,48 @@ num2 = 3.5
 print("5 - 3 ** 2 / 4 * 4 + 2 - 3", 5 - 3 ** 2 / 4 * 4 + 2 - 3)
 
 num **=2 #num **
+
+
+if True:
+    if False:
+        print("False")
+        print("Good")
+
+    elif True:
+        print('elif')
+        print("Bad")
+
+# # Prints nothing
+#
+# nums = [1, 2, 3, 4, 5]
+#
+# for num in nums:
+#     if num == 3:
+#         print("I found the number I was looking for.")
+#         break
+#     print(num)
+#
+# for num in nums:
+#     for letter in 'abc':
+#         if letter == "b":
+#             print("I found the letter I was looking for.")
+#             continue
+#         print(num, letter)
+#
+# for i in range(2, 10):
+#     print(i)
+#
+# x = 0
+# while x < 10:
+#     print(x)
+#     x = x + 1
+#
+#
+# def Hello_func(age, name = "Samuel"):
+#     response = name + " is " + age + " years old"
+#     print(response)
+#
+# output = Hello_func("20", "John")
+#
+# print(output)
+
