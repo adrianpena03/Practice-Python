@@ -30,10 +30,9 @@
 
 # print(macbook)
 
-<<<<<<< HEAD
 macbook.clear()
 print(macbook)
-=======
+
 # macbook.clear()
 # print(macbook)
 
@@ -104,4 +103,3 @@ num2 = 3.5
 print("5 - 3 ** 2 / 4 * 4 + 2 - 3", 5 - 3 ** 2 / 4 * 4 + 2 - 3)
 
 num **=2 #num **
->>>>>>> 1b5b47117fa7379ca2b8a4aea81082135c3beb87
