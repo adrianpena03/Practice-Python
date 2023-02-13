@@ -32,42 +32,41 @@
 #     x += 2
 
 
-def Hello_func(age, name = "Samuel"):
-    response = name + " is " + age + " years old"
-    print(response+ " inside fn")
-    return(response)
+# def Hello_func(age, name = "Samuel"):
+#     response = name + " is " + age + " years old"
+# #    print(response + " inside fn")
+#     return(response)
 
-output = Hello_func("20", "John")
+# output = Hello_func("Adrian")
 
-print(output + " outside fn")
+# print(output)
 
 
-# num1 = '4'
-# num2 = '5'
-# num3 = 6
-# num4 = 7
 
-# #print('number_float + number_int:', float(num1) + num2)
+num1 = '4'
+num2 = 5
+num3 = 6
+num4 = 7
+
+print('number_float + number_int:', int(num1) + num2)
 
 # print("Addition: 3 + 2 =", 3 + 2)
 
 # print("Division: 3 / 2 =", 3/2)
-# print("Floor Division: 3 // 2 =", 3 // 2) # only returns integer part, not decimal
-# print ("Modulus: 17 % 9", 17 % 9)
+# print("Floor Division: 8 // 3 =", 8 // 3) # only returns integer part, not decimal
+# print ("Mod", 50 % 21)
 
-# num = 3.5
+num = 3.5
 
-# # COMMA ACTS AS SPACE, COMPARE +
-
-
-# # DIVISION ALWAYS RETURNS FLOAT
-
-# print("5 - 3 ** 2 / 4 * 4 + 2 - 3", 5 - 3 ** 2 / 4 * 4 + 2 - 3)
+# COMMA ACTS AS SPACE, COMPARE +
 
 
+# DIVISION ALWAYS RETURNS FLOAT
+
+#print(5 - 3 ** 2 / 3 * 1 + 2 - 3)
 
 
-# nums = [1, 2, 3, 4, 5]
+nums = [1, 2, 3, 4, 5]
 
 # for num in nums:
 #     if num == 3:
@@ -91,10 +90,10 @@ print(output + " outside fn")
 #     x = x + 1
 
 
-# def Hello_func(age, name = "Samuel"):
-#     response = name + " is " + age + " years old"
-#     print(response)
+def Hello_func(age, name = "Samuel"):
+    response = name + " is " + age + " years old"
+    return(response)
 
-# output = Hello_func("20", "John")
+output = Hello_func("20", "John")
 
-# print(output)
+print(output)
