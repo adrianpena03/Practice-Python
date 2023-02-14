@@ -7,6 +7,6 @@ def CalculateBMI(weight, height, name = "James"):
     else:
         return("BMI is less than 22.")
 
-result = CalculateBMI(60, 1.7, "Adrian")
+result = CalculateBMI(60, 1.7, "James")
 
 print(result)

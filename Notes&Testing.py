@@ -23,8 +23,8 @@
 #             continue
 #         print(num, letter)
 
-# for i in range(2, 10):
-#     print(i)
+for i in range(2, 10):
+    print(i)
 
 # x = 2
 # while x < 10:
@@ -90,10 +90,23 @@ nums = [1, 2, 3, 4, 5]
 #     x = x + 1
 
 
-def Hello_func(age, name = "Samuel"):
-    response = name + " is " + age + " years old"
-    return(response)
+# def Hello_func(age, name = "Samuel"):
+#     response = name + " is " + age + " years old"
+#     return(response)
 
-output = Hello_func("20", "John")
+# output = Hello_func("20", "John")
 
-print(output)
+# print(output)
+
+# def prime(n):
+#     if n > 1:
+#         for i in range(2, int(n/2)+1):
+#             if (n % i) == 0:
+#                 print(n, "is not a prime number")
+#             break
+#         else:
+#             print(n, "is a prime number")
+#     # If the number is less than 1, its also not a prime number.
+#     else:
+#         print(n, "is not a prime number")
+
