@@ -23,4 +23,3 @@ for num1 in nums:
             num2 =+ 1
     print (i)
 
-
