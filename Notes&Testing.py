@@ -1,9 +1,9 @@
 
-# if True:
-#    if False:
-#        print("Good")
-# elif True:
-#        print("Bad")
+if True:
+   if False:
+       print("Good")
+elif True:
+       print("Bad")
 
 # Prints nothing 
 
