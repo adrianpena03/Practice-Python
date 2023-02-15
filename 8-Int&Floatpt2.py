@@ -9,17 +9,17 @@ while n != 0:
         if prime % i == 0:
             break
     else:
-        print(prime, end = " ,")
+        print(prime, end = ", ")
         n = n - 1
     prime = prime + 1
 
 
-nums = [1, 2, 3, 4, 5, 6]
-i = 0
+# nums = [1, 2, 3, 4, 5, 6]
+# i = 0
 
-for num1 in nums:
-    for num2 in nums:
-        if i % 3 != 0:
-            num2 =+ 1
-    print (i)
+# for num1 in nums:
+#     for num2 in nums:
+#         if i % 3 != 0:
+#             num2 =+ 1
+#     print (i)
 
