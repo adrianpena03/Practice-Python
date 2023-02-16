@@ -13,19 +13,3 @@ while n != 0:
         n = n - 1
     prime = prime + 1
 
-    #for i <= n/2
-   #         if (n%i) == 0
-            
-
-
-nums = [1, 2, 3, 4, 5, 6]
-i = 0
-
-for num1 in nums:
-    for num2 in nums:
-        if i % 3 != 0:
-            num2 =+ 1
-            i+=1
-print (i)
-
-

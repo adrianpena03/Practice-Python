@@ -1,30 +1,32 @@
-# Write a program that returns the multiplication of two numbers, by addition
+# Write a program that returns the multiplication of two numbers, by addition. Will do this one soon
 
-n = int(input("Enter an integer, and I wil tell you if it is prime or not. "))
+n = int(input("Give me an integer. "))
 
-i = 2
+# the function should return the sum of the integers from 1 to n and that are not a multiple of 4. WIP
 
-while i < n:
-    if n % i == 0:
-        print("Integer is not prime.")   
-        break 
-    i += 1
-    
-    
-    
-    if i == n - 1:
-        print("Prime")
-        break
+# def sum(n):
+#     for i in range(1, n + 1):
+#         if i % 4 == 0:
+#             i = i + 1
+#             continue
+#         n = i + n
+#     return(n)
+#
+# result = sum(n)
+# print(result)
 
-# for i in range(3, n+1):
-#     print(i)
-#     if n % i == 0:
-#         print("The integer you gave is not a prime number.")
-#         break
-#     else:
-#         print("The integer you gave is a prime number.")
-#         break
-        
+# (1, 2, 3, 4, 5)
+
+def sum(n):
+    for i in range(1, n + 1):
+        if i % 4 == 0:
+            continue
+        i = i + 1
+        n = i + n
+        print(n)
+        return(n)
+
+result = sum(n)
+print(result)
 
 
-# Prime is a number greater than one that is divisible by only 1 and itself to get a remainder of 0
