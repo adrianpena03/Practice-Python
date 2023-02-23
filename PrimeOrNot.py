@@ -4,18 +4,6 @@ n = int(input("Give me an integer. "))
 
 # the function should return the sum of the integers from 1 to n and that are not a multiple of 4. WIP
 
-# def sum(n):
-#     for i in range(1, n + 1):
-#         if i % 4 == 0:
-#             i = i + 1
-#             continue
-#         n = i + n
-#     return(n)
-#
-# result = sum(n)
-# print(result)
-
-# (1, 2, 3, 4, 5)
 
 def sum(n):
     for i in range(1, n + 1):
@@ -23,10 +11,10 @@ def sum(n):
             continue
         i = i + 1
         n = i + n
-        print(n)
         return(n)
 
 result = sum(n)
 print(result)
+
 
 
