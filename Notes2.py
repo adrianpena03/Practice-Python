@@ -69,7 +69,47 @@ def DoubleLetter(str):
 def Double_Char(str):
     return " ".join([c * 2 for c in str])
 
+
+
+
+
 # Write a function called Eight_count(bin) that receives a string consisting of only eights and nines as arguments
 # and returns the biggest number of consecutive eights in the string
 
-#def Eight_count(bin):
+bin = [9, 9, 8, 9]
+
+def eight_count(bin):
+     cons = 0
+     biggest = 0
+     for eights in bin:
+          if eights == 8:
+               cons = cons + 1
+          else:
+               if cons >= biggest:
+                    biggest = cons
+                    cons = 0
+          if cons >= biggest:
+               biggest = cons
+     return biggest
+
+result = eight_count(bin)
+print(result)
+
+def summation():
+    sum = 0
+    nums = [1, 2, 3, 4, 5]
+    for i in nums:   
+        sum = sum + i
+    return sum
+
+print(summation())
+
+      
+def Double_Char():
+    name = "Adrian"
+    new_string = " "
+    for i in name:
+        new_string = new_string + i * 2
+    return new_string
+
+print(Double_Char())
