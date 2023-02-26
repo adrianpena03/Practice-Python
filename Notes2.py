@@ -1,38 +1,38 @@
-#Me-21 = "Hi" - Not allowed bc dash
+# Me-21 = "Hi" - Not allowed bc dash
 # 2Em = 'Hi' - Not allowed bc starts w number
 
-# message = 'John\'s Book'
-# message = 'John\s Book'
-# message = "John\'s Book"
-# print(message)
+message = 'John\'s Book'
+message = 'John\s Book'
+message = "John\'s Book"
+print(message)
 # escape character python, counts as 1
 
-# message = "John\\\s Book"
-# message = "John\\\\s Book"
-# message = "Hello World"
-# print(message)
-#
-# message = "Hello World"
-# print('len(message): ', len(message))
-#
-# print('message[0]', message[0]) # indexing uses brackets
-#
-# #print(message[len(message)]) # - QUESTION ON EXAM
-#
-# print('message[len(message)-1: ', message[len(message)-1])
-#
-# print("Message Last Letter: ", message[1:6:7])
-# print('message[0:0]: ', message[:5]) # prints nothing
-#
-# print('message[0:0]: ', message[1:6:2]) # 2 means take 2 steps
-#
-# print('message[0:0]: ', message[2::-1])
-# print('message[0:0]: ', message[::-1])
+message = "John\\\s Book"
+message = "Hello World"
+message = "John\\\\s Book"
+print(message)
 
-# message = "Hello World"
-# print(message.count('hello')) # Will not get error, will be 0 if doesn't exist
-# print(message.count("Hello")) # Prints 1
-# print(message.find("Hello")) # Prints 0
+message = "Hello World"
+print('len(message): ', len(message))
+
+print('message[0]', message[0]) # indexing uses brackets
+
+#print(message[len(message)]) # - QUESTION ON EXAM
+
+print('message[len(message)-1: ', message[len(message)-1])
+
+print("Message Last Letter: ", message[1:6:7])
+print('message[0:0]: ', message[:5]) # prints nothing
+
+print('message[0:0]: ', message[1:6:2]) # 2 means take 2 steps
+
+print('message[0:0]: ', message[2::-1])
+print('message[0:0]: ', message[::-1])
+
+message = "Hello World"
+print(message.count('hello')) # Will not get error, will be 0 if doesn't exist
+print(message.count("Hello")) # Prints 1
+print(message.find("Hello")) # Prints 0 (for index 0?)
 
 
 # Given a string name, e.g. 'Bob', return a greeting of the form 'Hello Bob!'.
