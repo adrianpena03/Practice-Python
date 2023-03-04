@@ -9,7 +9,7 @@
 
 word = "unicorn"
 def First_Last(word):
-    if len(word) <= 2:
+    if len(word) < 2:
         return " "
     else:
         new_string = word[0] + word[1] + word[len(word)-2] + word[len(word)-1] 
