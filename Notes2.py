@@ -113,3 +113,13 @@ def Double_Char():
     return new_string
 
 print(Double_Char())
+word = "Adrian"
+
+def String_Split(word):
+     ns = " "
+     for letter in word:
+          ns = ns + letter + "$"
+     return ns
+
+result = String_Split(word)
+print(result)
