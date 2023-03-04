@@ -7,8 +7,24 @@
 # Then it prints the new list and returns the new list. For instance, if the input is ('b', 'a', 'c', 'a', 'c'), 
 # the output should be ['a', 'b', 'b', 'c', 'c', 'c']. If the input is (8, 5, 6, 6), the output should be [5, 6, 6, 8, 8, 8].
 
-tup = (1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 7, 7, 8)
+tup = (9, 10, 10, 1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 7, 7, 8)
+   
+# set_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19]
 
-tup_set = set(tup)
+def ConvertDuplic(tup):
+   tup_set = set(tup)
+   set_list = list(tup_set)
+   set_list.sort()
 
-print(tup_set)
+   new_list = []
+   for i in range(len(set_list)):
+      item = set_list[i]
+      num_times = i + 1
+      for j in range(num_times):
+         new_list.append(item)
+   return new_list
+
+
+result = ConvertDuplic(tup)
+print(result)
+
