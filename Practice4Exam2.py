@@ -54,22 +54,26 @@
 # print(result)
 
 #------------------------------------------------
-courses = ['History', 'Math', 'Physics', 'CompSci']
-nums = [9, 7, 4, 5, 8, 1]
+# courses = ['History', 'Math', 'Physics', 'CompSci']
+# nums = [9, 7, 4, 5, 8, 1]
 
-# convert nums into list of strings
-num_strs = [str(num) for num in nums]
-print("Step 1:", num_strs)
+# # convert nums into list of strings
+# num_strs = [str(num) for num in nums]
+# print("Step 1:", num_strs)
 
-# join list of strings into a single string separated by ' - '
-num_str = ' - '.join(num_strs)
-print("Step 2:", num_str)
+# # join list of strings into a single string separated by ' - '
+# num_str = ' - '.join(num_strs)
+# print("Step 2:", num_str)
 
-# split string back into a list of strings
-lis = num_str.split(' - ')
-print("Step 3:", (lis))
+# # split string back into a list of strings
+# lis = num_str.split(' - ')
+# print("Step 3:", (lis))
 
-# convert list of strings back into list of integers
-lis = [int(num) for num in lis]
+# # convert list of strings back into list of integers
+# lis = [int(num) for num in lis]
 
-print("Step 3:", lis)
+# print("Step 3:", lis)
+# -------------------------------------------------
+set_1 = {"History", "Math", "Physics", "CompSci"}
+set_1.add("Art")
+
