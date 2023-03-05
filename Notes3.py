@@ -1,5 +1,6 @@
 # Me-21 = "Hi" - Not allowed bc dash
 # 2Em = 'Hi' - Not allowed bc starts w number
+# variables can only contain letters, numbers, and underscores
 
 # message = 'John\'s Book'
 # message = 'John\s Book'
@@ -9,7 +10,6 @@
 
 # message = "John\\\s Book"
 # message = "John\\\\s Book"
-# message = "Hello World"
 # print(message)
 #
 # message = "Hello World"
@@ -22,7 +22,7 @@
 # print('message[len(message)-1: ', message[len(message)-1])
 #
 # print("Message Last Letter: ", message[1:6:7])
-# print('message[0:0]: ', message[:5]) # prints nothing
+# print('message[:5]: ', message[:5])
 #
 # print('message[0:0]: ', message[1:6:2]) # 2 means take 2 steps
 #
@@ -32,7 +32,7 @@
 # message = "Hello World"
 # print(message.count('hello')) # Will not get error, will be 0 if doesn't exist
 # print(message.count("Hello")) # Prints 1
-# print(message.find("Hello")) # Prints 0
+# print(message.find("Hello")) # Prints 0 bc of index
 
 
 # Given a string name, e.g. 'Bob', return a greeting of the form 'Hello Bob!'.
