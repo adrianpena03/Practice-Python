@@ -74,6 +74,3 @@
 
 # print("Step 3:", lis)
 # -------------------------------------------------
-set_1 = {"History", "Math", "Physics", "CompSci"}
-set_1.add("Art")
-

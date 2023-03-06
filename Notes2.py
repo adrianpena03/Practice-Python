@@ -76,7 +76,7 @@ def Double_Char(str):
 # Write a function called Eight_count(bin) that receives a string consisting of only eights and nines as arguments
 # and returns the biggest number of consecutive eights in the string
 
-bin = [9, 9, 8, 9]
+bin = [9, 8,8,8,8,8,9, 8, 8, 8, 8, 9]
 
 def eight_count(bin):
      cons = 0
@@ -95,31 +95,31 @@ def eight_count(bin):
 result = eight_count(bin)
 print(result)
 
-def summation():
-    sum = 0
-    nums = [1, 2, 3, 4, 5]
-    for i in nums:   
-        sum = sum + i
-    return sum
+# def summation():
+#     sum = 0
+#     nums = [1, 2, 3, 4, 5]
+#     for i in nums:   
+#         sum = sum + i
+#     return sum
 
-print(summation())
+# print(summation())
 
       
-def Double_Char():
-    name = "Adrian"
-    new_string = " "
-    for i in name:
-        new_string = new_string + i * 2
-    return new_string
+# def Double_Char():
+#     name = "Adrian"
+#     new_string = " "
+#     for i in name:
+#         new_string = new_string + i * 2
+#     return new_string
 
-print(Double_Char())
-word = "Adrian"
+# print(Double_Char())
+# word = "Adrian"
 
-def String_Split(word):
-     ns = " "
-     for letter in word:
-          ns = ns + letter + "$"
-     return ns
+# def String_Split(word):
+#      ns = " "
+#      for letter in word:
+#           ns = ns + letter + "$"
+#      return ns
 
-result = String_Split(word)
-print(result)
+# result = String_Split(word)
+# print(result)
