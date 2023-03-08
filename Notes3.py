@@ -165,7 +165,6 @@ items = list()
 
 # DOES NOT CREATE AN EMPTY SET
 items = {} # CREATES AN EMPTY DICTIONARY
-
 items = set() # CREATES AN EMPTY SET
 
 

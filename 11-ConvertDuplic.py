@@ -21,25 +21,6 @@ def ConvertDuplic(tup):
          new_list.append(item)
    return new_list
 
-# # Testing Code
-tup = (9, 10, 10, 1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 8)
-result = ConvertDuplic(tup)
-print(result)
-
-def ConvertDuplic(tup):
-   tup_set = set(tup)
-   set_list = list(tup_set)
-   set_list.sort()
-
-   new_list = []
-   nt = 0
-   for i in range(len(set_list)):
-      item = set_list[i]
-      num_times = i + 1
-      for j in range(num_times):
-         new_list.append(item)
-   return new_list
-
 # Testing Code
 tup = (9, 10, 10, 1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 8)
 result = ConvertDuplic(tup)

@@ -7,7 +7,6 @@ def Multiply_By_Adding(f, s):
     multiply = 0
     for i in range(s):
         multiply = multiply + f
-        print(multiply)
     return multiply
 
 result = Multiply_By_Adding(f, s)
