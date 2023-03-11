@@ -8,20 +8,37 @@
 # the output should be ['a', 'b', 'b', 'c', 'c', 'c']. If the input is (8, 5, 6, 6), the output should be [5, 6, 6, 8, 8, 8].
 
    
-def ConvertDuplic(tup):
-   tup_set = set(tup)
-   set_list = list(tup_set)
-   set_list.sort()
+# def ConvertDuplic(tup):
+#    tup_set = set(tup)
+#    set_list = list(tup_set)
+#    set_list.sort()
 
-   new_list = []
-   for i in range(len(set_list)):
-      item = set_list[i]
-      num_times = i + 1
-      for j in range(num_times):
-         new_list.append(item)
-   return new_list
+#    new_list = []
+#    for i in range(len(set_list)):
+#       item = set_list[i]
+#       num_times = i + 1
+#       for j in range(num_times):
+#          new_list.append(item)
+#    return new_list
 
-# Testing Code
-tup = (9, 10, 10, 1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 8)
-result = ConvertDuplic(tup)
-print(result)
+# # Testing Code
+# tup = (9, 10, 10, 1, 1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 8)
+# result = ConvertDuplic(tup)
+# print(result)
+
+# -----------
+tup = ("a", "a", "a", "b", "c", "d", "e", "f", "g")
+
+def Geometric(tup):
+    tup_to_set = set(tup)
+    set_to_lis = list(tup_to_set)
+    set_to_lis.sort()
+
+    new_list = []
+    dup = 0
+    for letter in set_to_lis:
+        dup = dup + 1
+        new_list.append(letter * dup)
+    return new_list
+
+print(Geometric(tup))

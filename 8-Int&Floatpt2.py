@@ -9,7 +9,10 @@ while n != 0:
         if prime % i == 0:
             break
     else:
-        print(prime, end = " ,")
+        print(prime, end = ", ")
         n = n - 1
     prime = prime + 1
 
+#just do in a for loop or while loop. if num%i == 0, 
+# then ‘not prime’, move on to next. If prime, add/append 
+# to list or print.

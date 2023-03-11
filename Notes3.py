@@ -61,7 +61,7 @@
 # def DoubleLetter(str):
 #     new_string = " "
 #     for i in str:
-#         new_string += i*2
+#         new_string = new_string + i*2
 #     return new_string
 #
 # # OR
@@ -72,6 +72,20 @@
 # Write a function called Eight_count(bin) that receives a string consisting of only eights and nines as arguments
 # and returns the biggest number of consecutive eights in the string
 
+# 
+#idk
+# # def StartToEnd(s):
+#     new_string = ""
+#     if len(s) < 2:
+#         return s
+#     elif len(s) == 2:
+#         return s
+#     else:
+#         new_string = s[-2:] + s[:-2]
+#     return new_string
+
+# s = input("Please type in any string. \n")
+# print(StartToEnd(s))
 #courses = ['History', 'Math', 'Physics', 'CompSci']
 # print(courses)
 # #print (courses[4]) # error
@@ -127,6 +141,7 @@ courses = ['History', 'Math', 'Physics', 'CompSci']
 
 
 
+
 #num_str = " - ".join(nums)
 #lis = num_str.split(' - ')
 #print(lis)
@@ -166,7 +181,5 @@ items = list()
 # DOES NOT CREATE AN EMPTY SET
 items = {} # CREATES AN EMPTY DICTIONARY
 items = set() # CREATES AN EMPTY SET
-
-
 
 
