@@ -25,17 +25,22 @@
 # result = IsPrime(n)
 # print(result)
 
-num = 1
-# If given number is greater than 1
-if num > 1:
-	# Iterate from 2 to n / 2
-	for i in range(2, int(num/2)):
-		# If num is divisible by any number between
-		# 2 and n / 2, it is not prime
-		if num % i == 0:
-			print(num, "is not a prime number")
-			break
-	else:
-		print(num, "is a prime number")
-else:
-	print(num, "is not a prime number")
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+def RemovePrime(nums):
+    new_list = []
+    for num in nums:
+        is_prime = True
+        if num < 3:
+            continue
+        else:
+            for i in range(2, int(num**1/2)+1):
+                if num % i == 0:
+                    is_prime = False
+                    break
+            if not is_prime:
+                new_list.append(num)
+    return new_list
+
+result = RemovePrime(nums)
+print(result)
