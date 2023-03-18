@@ -29,7 +29,7 @@ def RemovePrime(nums):
     for num in nums:
         if num == 2:
             new_list.append(num)
-        elif num > 2:
+        elif num >= 2:
             for i in range(2, num):
                 if num % i == 0:
                     new_list.append(num)
