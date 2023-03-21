@@ -12,7 +12,7 @@ def RemovePrime(nums):
     for num in nums:
         if num <= 3:
             continue
-        elif num > 3:
+        else:
             for i in range(2, int(num**0.5)+1):
                 if num % i == 0:
                     new_list.append(num)
