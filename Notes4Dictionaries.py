@@ -2,13 +2,19 @@
 # Value: Anything else can be value
 
 # student = {"a":1, "b":3, "c":5} # - Simple Dictionary
-student = {("Hi", "You"): 1, "name": 2, "age": 3, "phone": "123-456-7890"}
+student = {
+        ("Hi", "You"): 1, 
+          "name": 2, 
+          "age": "", 
+          #"phone": "123-456-7890"
+          }
 
 # print(student["name"]) # - Gets value of key
 # print(student.get("name")) # - Another way to get value of key. **Will not return error if key doesn't exist, will return "None"**
 
-# student["name"] = "Oliver" # - Replaces value of key, can be any new data type.
-# student["phone"] = "555-555-55555" # - This adds a new key value pair if it doesn't already exist
+student["name"] = "Oliver" # - Replaces value of key, can be any new data type.
+student["phone"] = "555-555-55555" # - This adds a new key value pair if it doesn't already exist
+print(student)
 
 # del student["phone"] # - Delete a key in dictionary. RETURNS 
 # student.pop["age"] # - Another way to delete a key in a dictionary. RETURNS the value associated with the key that was removed
