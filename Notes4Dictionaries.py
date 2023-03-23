@@ -5,8 +5,7 @@
 student = {
         ("Hi", "You"): 1, 
           "name": 2, 
-          "age": "", 
-          #"phone": "123-456-7890"
+          "age": 3, 
           }
 
 # print(student["name"]) # - Gets value of key
