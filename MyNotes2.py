@@ -5,7 +5,7 @@ def Days_in_Month(month):
     if (month < 1) or (month > 12):
         return "That is not a valid month"
     else:
-        return days[month]
+        return "This month has " + str(days[month]) + " days."
 
 result = Days_in_Month(month)
 print(result)
