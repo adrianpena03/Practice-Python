@@ -11,16 +11,10 @@ result = Days_in_Month(month)
 print(result)
 
 def is_leap_year(year):
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                return "This is a leap year"
-            else:
-                return "This is not a leap year"
-        else:
-            return "This is a leap year"
+    if year % 4 == 0 and (year % 100 == 0 or year % 400 == 0):
+        return "This is a leap year."
     else:
-        return "This is not a leap year"
+        return "This is not a leap year."
 
 year = int(input("Enter a year: "))
 result = is_leap_year(year)
