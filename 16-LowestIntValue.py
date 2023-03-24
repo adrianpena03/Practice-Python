@@ -11,5 +11,6 @@ dict = {
         'Geography': 19
         } 
 
+min_value = min(dict.values())
+print(min_value)
 
-        
