@@ -42,3 +42,4 @@ def Geometric(tup):
     return new_list
 
 print(Geometric(tup))
+

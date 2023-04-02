@@ -12,7 +12,5 @@ for i in range(len(list_1)):
     value = list_2[i]
     my_dict[key] = value
 
-
 # Testing Code
 print(my_dict)
-

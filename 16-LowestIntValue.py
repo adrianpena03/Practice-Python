@@ -4,6 +4,7 @@
 # You can test your function with {'Math': 25, 'History': 20, 'Physics': 18, 'Geography': 19} 
 # and it should print out Physics.
 
+
 dict = {
         'Math': 25, 
         'History': 20, 
@@ -11,6 +12,13 @@ dict = {
         'Geography': 19
         } 
 
-min_value = min(dict.values())
-print(min_value)
+def MinVal(dict):
+    min_value = min(dict.values())
+    for key, value in dict.items():
+        if value == min_value:
+            return key
 
+
+# Testing Code
+result = MinVal(dict)
+print(result)
