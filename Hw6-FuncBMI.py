@@ -1,5 +1,3 @@
-
-
 def CalculateBMI(weight, height, name = "James"):
     BMI = weight/(height) ** 2
     if BMI >= 22:
