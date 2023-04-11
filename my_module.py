@@ -12,3 +12,9 @@ def find_index(list_to_search, target):
 
 def func1():
     print("Hello!")
+
+
+def Lis2Str(lis):
+    lis_str = [str(lis) for num in lis]
+    str_join = ",".join(lis_str)
+    

@@ -9,4 +9,4 @@ user_input = input("Enter a value: ")
 if user_input in my_dict.values():
     print(True)
 else:
-    print(False)
+    print (False)
