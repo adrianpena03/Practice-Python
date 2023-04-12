@@ -7,7 +7,22 @@
 # Please note that the join function only operates on lists whose elements are string. 
 # Since your list includes integers in this case, you need to take an extra step to make it possible to use the join function.
 
+nums = [1, 2, 3, 4, 5]
+def LisToStr(nums):
+    new_str = [str(num) for num in nums]
+    str_join = ','.join(new_str)
+    return str_join
 
+print(LisToStr(nums))
+
+nums = "123456"
+
+# Now backwards
+def StrToLis(nums):
+    Separate = [list(i) for i in nums]
+    return Separate
+
+print(StrToLis(nums))
 
 #-----------------------------------------
 # H 13 about Lists, Tuples, and Sets: Write a function that receives
@@ -16,7 +31,22 @@
 # For instance, if the input is [1, 2, 3, 4, 5, 6, 7], it should print [1, 4, 6] or [4, 6]. 
 # However you decide to treat 1 is okay.
 
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+def RemovePrime(nums):
+    new_list = []
+    for num in nums:
+        if num <= 3:
+            continue
+        else:
+            for i in range(2, int(num**0.5) + 1):
+                if num % i == 0:
+                    new_list.append(num)
+                    break
+                else:
+                    continue
+    return new_list
 
+print(RemovePrime(nums))
 
 
 
@@ -41,7 +71,7 @@
 
 
 #-----------------------------------------------------
-# Write a function that receives a dictionary as input
+# H 16: Write a function that receives a dictionary as input
 # and prints out the key for the minimum value among the dictionary values. 
 # Call that function and print its output. 
 # You can test your function with {'Math': 25, 'History': 20, 'Physics': 18, 'Geography': 19} 

@@ -3,7 +3,7 @@
 
 # student = {"a":1, "b":3, "c":5} # - Simple Dictionary
 student = {
-        ("Hi", "You"): 1, 
+         ("Hi", "You"): 1, 
           "name": 2, 
           "age": 3, 
           }
@@ -11,12 +11,14 @@ student = {
 # print(student["name"]) # - Gets value of key
 # print(student.get("name")) # - Another way to get value of key. **Will not return error if key doesn't exist, will return "None"**
 
+output = student.pop("age")
+
 student["name"] = "Oliver" # - Replaces value of key, can be any new data type.
 student["phone"] = "555-555-55555" # - This adds a new key value pair if it doesn't already exist
 print(student)
 
 # del student["phone"] # - Delete a key in dictionary. RETURNS 
-# student.pop["age"] # - Another way to delete a key in a dictionary. RETURNS the value associated with the key that was removed
+# student.pop("age") # - Another way to delete a key in a dictionary. RETURNS the value associated with the key that was removed
 
 # print(student.keys()) # - Returns all keys from dictionary
 # print(student.values()) # - Returns all values from dictionary
@@ -40,6 +42,3 @@ print(student)
 # for key, value in student.items():
 #   print(key, value)
 # prints key and value also, but it's separate
-
-
-

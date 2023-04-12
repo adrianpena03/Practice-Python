@@ -13,11 +13,11 @@ def Lis2Str(lis):
     str_join = ",".join(lis_string)
     return str_join
 
-print(Lis2Str(lis))
+#print(Lis2Str(lis))
 
 word = "Backwards"
 def str_lis(word):
-    new_str = word.split(', ')
+    # No need to use split method
     str_lis = [list(char) for char in word]
     return str_lis
 

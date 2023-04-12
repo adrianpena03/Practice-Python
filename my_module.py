@@ -25,12 +25,13 @@ def RemovePrime(lis):
         if num <=3:
             continue
         else:
-            for i in range(2, (num**.05) + 1):
+            for i in range(2, int(num**.05) + 1):
                 if num % i == 0:
                     new_list.append(num)
                     break
                 else:
                     continue
+    return new_list
 
 def PopulateDictionary(list_1, list_2):
     dict = {}
