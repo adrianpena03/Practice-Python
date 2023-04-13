@@ -24,6 +24,7 @@ def StrToLis(nums):
 
 print(StrToLis(nums))
 
+
 #-----------------------------------------
 # H 13 about Lists, Tuples, and Sets: Write a function that receives
 # a list of integers and prints out that list after removing prime numbers from the list.
@@ -46,29 +47,51 @@ def RemovePrime(nums):
                     continue
     return new_list
 
-print(RemovePrime(nums))
+#print(RemovePrime(nums))
 
+def AddPrime(nums):
+    new_list = []
+    for num in nums:
+        if num == 1:
+            continue
+        elif num == 2 or num == 3:
+            new_list.append(num)
+            continue
+        else:
+            for i in range(2, int(num**0.5)+1):
+                if num % i == 0:
+                    break
+            else:
+                new_list.append(num)
+    return new_list
 
+print(AddPrime(nums))
 
 #---------------------------------------------------
-# H 14: Define list_1 = ['Ten', 'Twenty', 'Thirty'] and list_2 = [10, 20, 30], then write a program 
+# H 14: Define list_1 = ['Ten', 'Twenty', 'Thirty'] and list_2 = [10, 20, 30], then write a function
 # that uses a for loop to create a dictionary called dict whose keys are items from list_1
 # and whose values are items from list_2 and then prints the dict. 
-
-
-
-
+def Combine(list_1, list_2):
+    list_1 = ["Ten", "Twenty", "Thirty"]
+    list_2 = [10, 20, 30]
+    dict = {}
+    for i in range(len(list_1)):
+        key = list_1[i]
+        value = list_2[i]
+        dict[key] = [value]
+    return dict
 
 #----------------------------------------------------
 # H 15: Write a program that defines dict={'name': 'John', 'expertise': 'Math'}, 
 # then asks for an input from the user and prints True if the user input 
 # exists among the values of the dictionary and False if it does not. 
+dict = {'name': 'John', 'expertise': 'Math'}
+# user_input = input("Input a value. ")
 
-
-
-
-
-
+# if user_input in dict.values():
+#     print (True)
+# else:
+#     print (False)
 
 #-----------------------------------------------------
 # H 16: Write a function that receives a dictionary as input
@@ -77,7 +100,10 @@ print(RemovePrime(nums))
 # You can test your function with {'Math': 25, 'History': 20, 'Physics': 18, 'Geography': 19} 
 # and it should print out Physics.
 
-
-
-
+dict2 = {'Math': 25, 'History': 20, 'Physics': 18, 'Geography': 19} 
+def MinVal(dict):
+    min_value = min(dict.values())
+    for key, value in dict.items():
+        if value == min_value:
+            return key
 #-------------------------------------------------------
