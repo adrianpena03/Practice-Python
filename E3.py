@@ -1,14 +1,14 @@
 
 def Factorial(n):
     dict = {}
-    user_input = n
     factorial = 1
-    for i in range(1, user_input + 1):
+    for i in range(1, n + 1):
         factorial = factorial * i
-        key = i
-        dict[key] = factorial
+        dict[i] = factorial
     return dict
 
 
-n = 10
+n = 5
 print(Factorial(n))
+
+#def Cubed(n):
