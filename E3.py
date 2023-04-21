@@ -8,7 +8,7 @@ def Factorial(n):
     return dict
 
 
-n = 5
+n = 10
 print(Factorial(n))
 
 #def Cubed(n):
