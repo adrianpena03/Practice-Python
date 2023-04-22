@@ -6,3 +6,20 @@
 # third word on each line. Each list has five elements. Make sure that there 
 # are no new line characters in the elements.
 
+list_1 = []
+list_2 = []
+list_3 = []
+
+with open('19File.txt', 'r') as file:
+    for line in file:
+        words = line.split()
+        if len(words) > 0:
+            list_1.append(words[0])
+        if len(words) > 1:
+            list_2.append(words[1])
+        if len(words) > 2:
+            list_3.append(words[2])
+
+print("The first list is:", list_1)
+print("The second list is:", list_2)
+print("The third list is:", list_3)
