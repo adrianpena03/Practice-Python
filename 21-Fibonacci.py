@@ -9,13 +9,14 @@
 
 n = int(input("Enter the number of terms you want in the Fibonacci sequence: "))
 
-# initialize the first two terms
 value_1 = 0
 value_2 = 1
 
-# print the first n terms of the sequence
 for i in range(n):
-    print(value_1, end=" ")
+    if i == n - 1:
+        print(value_1, end="")
+    else:
+        print(value_1, end=", ")
     next_value = value_1 + value_2
     value_1 = value_2
     value_2 = next_value

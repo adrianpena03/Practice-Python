@@ -9,3 +9,27 @@
 # the length of one row of the matrix from the user. It will then 
 # take n lines of input containing n integers separated by spaces from the user.
 
+# Input:
+# 3
+# 2 7 6
+# 9 5 1
+# 4 3 8
+# Output: "magic"
+
+# Input:
+# 4
+# 16 2 3 13
+# 5 11 10 8
+# 9 7 6 12
+# 4 14 15 1
+# Output: "magic"
+
+# Input:
+# 4
+# 12 3 4 5
+# 5 67 8 9
+# 102 3 4 6
+# 34 2 89 0
+# Output: "not magic"
+
+
