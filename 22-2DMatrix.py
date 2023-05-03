@@ -38,7 +38,7 @@ n = int(input("Enter the length of one row of the matrix: "))
 # initialize the matrix
 matrix = []
 for i in range(n):
-    row = list(map(int, input().split()))
+    row = [int(x) for x in input().split()]
     matrix.append(row)
 
 # calculate the sum of the first row

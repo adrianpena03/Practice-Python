@@ -49,32 +49,40 @@ def RemoveNIndex(str, n):
 
 nums = [1, 2, 2, 3, 4, 5, 6]
 
-def ConsTwo(nums):
-    cons = 0
-    for num in nums:
-        if num == 2:
-            cons = cons + 1
-        else:
-            cons = 0
-        if cons == 2:
-            return True
-    return False
+# def ConsTwo(nums):
+#     cons = 0
+#     for num in nums:
+#         if num == 2:
+#             cons = cons + 1
+#         else:
+#             cons = 0
+#         if cons == 2:
+#             return True
+#     return False
 
 # or 
 
 def has_two_adjacent(nums):
-    for i in range(len(nums) - 1):
+    for i in range(len(nums)-1):
         if nums[i] == nums[i + 1] == 2:
             return True
     return False
 
 
-print(ConsTwo(nums))
+print(has_two_adjacent(nums))
 
 
 # Problem 5: Given two strings, return True if either of the strings appears at the very end of the other string,
 # ignoring upper/lower case differences
 
+def AppearAtEnd(str1, str2):
+    LowerStr1 = str1.lower()
+    LowerStr2 = str2.lower()
+    if LowerStr1.endswith(LowerStr2) or LowerStr2.endswith(LowerStr1):
+        return True
+    else:
+        return False
 
+print(AppearAtEnd(str1="Hello", str2="lx"))
 
 # Problem 6: Flatten a list, write a function that takes a list and flattens it into a one-dimensional list.
