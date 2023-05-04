@@ -69,7 +69,7 @@ def has_two_adjacent(nums):
     return False
 
 
-print(has_two_adjacent(nums))
+#print(has_two_adjacent(nums))
 
 
 # Problem 5: Given two strings, return True if either of the strings appears at the very end of the other string,
@@ -83,6 +83,48 @@ def AppearAtEnd(str1, str2):
     else:
         return False
 
-print(AppearAtEnd(str1="Hello", str2="lx"))
+#print(AppearAtEnd(str1="Hello", str2="lx"))
 
 # Problem 6: Flatten a list, write a function that takes a list and flattens it into a one-dimensional list.
+
+lis = [[1, 2], [3, 4], [5, 6]]
+
+def Flatten(lis):
+    new_list = []
+    for sublist in lis:
+        for element in sublist:
+            new_list.append(element)
+    return new_list
+
+# print(Flatten(lis))
+
+# Problem 7: Two strings are anagrams if you can make one from the other by rearranging the letters.
+# Write a function named is_anagram that takes two strings as its parameters.
+# Your function should return True if the strings are anagrams, and false otherwise.
+# For example, the call is_anagram("typhoon", "apython") should return True, while ("Alice, Bob") should return false.
+
+str1 = "Penaa"
+str2 = "Pena"
+
+def is_anagram(str1, str2):
+    sort_str1 = sorted(str1)
+    sort_str2 = sorted(str2)
+    for char in sort_str1:
+        for char in sort_str2:
+            if sort_str1 == sort_str2:
+                return True
+            return False
+
+print(is_anagram(str1, str2))
+
+# Problem 8: Return True if the given string contains an appearance of "xyz" where the "xyz"
+# is not direclty proceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+
+
+
+# Problem 9: Write a function named format_number that takes a non-negative number as its only parameter.
+# Your function should convert the number to a string and add commas as a thousands operator.
+# For example, calling format_number(1000000) should return "1,000,000".
+
+
+# Problem 10: Make a tic tac toe game that plays with the user.

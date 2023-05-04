@@ -1,17 +1,15 @@
 num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-def twoSum(num):
-    t = 13
-    i = 0
-    j = 0
+target = 10
+
+def twoSum(target, num):
     for i in num:
         for j in num:
-            if num[i]-1 + num[j]-1 == t:
+            if num[i] + num[j] == target:
                 return i, j
-    print("Not Found.")
-    return "No Number Found"
+            return "Not Found"
 
-twoSum(num)
+print(twoSum(target, num))
 
 
 # WIP
