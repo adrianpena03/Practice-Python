@@ -102,13 +102,14 @@ def Flatten(lis):
 # Write a function named is_anagram that takes two strings as its parameters.
 # Your function should return True if the strings are anagrams, and false otherwise.
 # For example, the call is_anagram("typhoon", "apython") should return True, while ("Alice, Bob") should return false.
+# (I added extra capitalzation step)
 
 str1 = "Adrian"
-str2 = "aAdrinz"
+str2 = "ADRIAN"
 
 def is_anagram(str1, str2):
-    sort_str1 = sorted(str1)
-    sort_str2 = sorted(str2)
+    sort_str1 = sorted(str1.lower())
+    sort_str2 = sorted(str2.lower())
     if sort_str1 == sort_str2:
         return True
     return False
