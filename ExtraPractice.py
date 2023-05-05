@@ -114,10 +114,11 @@ def is_anagram(str1, str2):
         return True
     return False
 
-print(is_anagram(str1, str2))
+#print(is_anagram(str1, str2))
 
 # Problem 8: Return True if the given string contains an appearance of "xyz" where the "xyz"
 # is not direclty proceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+
 
 
 
