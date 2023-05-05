@@ -119,7 +119,22 @@ def is_anagram(str1, str2):
 # Problem 8: Return True if the given string contains an appearance of "xyz" where the "xyz"
 # is not direclty proceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
 
+s = "aabbcc"
 
+def max_occurrence(s):
+    max_char = ''
+    max_count = 0
+
+    for char in s:
+        count = s.count(char)
+        if count > max_count or (count == max_count and char < max_char):
+            max_count = count
+            max_char = char
+
+    return max_char
+
+
+# print(max_occurrence(s))
 
 
 # Problem 9: Write a function named format_number that takes a non-negative number as its only parameter.
@@ -128,3 +143,12 @@ def is_anagram(str1, str2):
 
 
 # Problem 10: Make a tic tac toe game that plays with the user.
+
+a = 12
+b = 8
+
+while a > b:
+    a -= 2
+    print(a, b)
+    b -= 1
+    print(a - 1, b)
