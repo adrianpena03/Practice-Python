@@ -120,7 +120,16 @@ def is_anagram(str1, str2):
 # is not direclty proceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
 
 
-# print(max_occurrence(s))
+def PeriodInXYZ(string):
+    for i in range(len(string) - 2):
+        if string[i] == "x" and string[i - 1] != ".":
+                if string[i + 1] == "y":
+                    if string[i + 2] == "z":
+                        return True
+    return False
+                    
+# print(PeriodInXYZ(string))
+
 
 
 # Problem 9: Write a function named format_number that takes a non-negative number as its only parameter.
@@ -129,3 +138,4 @@ def is_anagram(str1, str2):
 
 
 # Problem 10: Make a tic tac toe game that plays with the user.
+
