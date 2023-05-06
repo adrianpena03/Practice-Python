@@ -131,11 +131,34 @@ def PeriodInXYZ(string):
 # print(PeriodInXYZ(string))
 
 
+# # Problem 9: Write a function named format_number that takes a non-negative number as its only parameter.
+# # Your function should convert the number to a string and add commas as a thousands operator.
+# # For example, calling format_number(1000000) should return "1,000,000".
 
-# Problem 9: Write a function named format_number that takes a non-negative number as its only parameter.
-# Your function should convert the number to a string and add commas as a thousands operator.
-# For example, calling format_number(1000000) should return "1,000,000".
+num = 1009
+
+def format_number(num):
+    if num < 0:
+        return "Use a positive number."
+    num_str = str(num)
+    new_num = ''
+    reverse_string = num_str[::-1]
+    for i in range(len(reverse_string)):
+        if i % 3 == 0 and i != 0:
+            new_num = reverse_string[i] + "," + new_num
+            continue
+        new_num = reverse_string[i] + new_num
+    return new_num
+
+print(format_number(num))
 
 
 # Problem 10: Make a tic tac toe game that plays with the user.
 
+lis = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(lis[1][2])

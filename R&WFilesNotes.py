@@ -78,3 +78,5 @@ finally: # Finally will always be executed, error or not.
 
 # for i in range(1, 3):
 #     print(function(i))
+
+import math as m
