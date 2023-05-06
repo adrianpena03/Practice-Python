@@ -70,13 +70,3 @@ else:
 finally: # Finally will always be executed, error or not.
     print("Finally was triggered.") # 0 or 1 finally clause
 
-# def function(n):
-#     if n == 1:
-#         return 2
-#     else:
-#         return 1400 * function(n - 1)
-
-# for i in range(1, 3):
-#     print(function(i))
-
-import math as m
