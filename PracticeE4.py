@@ -48,19 +48,20 @@ with open ("20New.txt", "r") as w_20New:
 # Trying to take a number from a file, then use that number in a function.
 # WIP
 
-n = int(input("Give me a number. "))
+# n = int(input("Give me a number. "))
 
-def Summation(n):
-    result = 0
-    for i in range(0, n + 1):
-        if i % 4 == 0:
-            continue
-        result = result + i
-    return result
+# def Summation(n):
+#     result = 0
+#     for i in range(0, n + 1):
+#         if i % 4 == 0:
+#             continue
+#         result = result + i
+#     return result
 
-print(Summation(n))
+# print(Summation(n))
 
-def CreateTxtWn(n):
-    n = int(input("Give me a number. "))
-    with open("PracticeSummation.txt", "w+") as f:
-        f.write(n)
+# def CreateTxtWn(n):
+#     n = int(input("Give me a number. "))
+#     with open("PracticeSummation.txt", "w+") as f:
+#         f.write(n)
+
