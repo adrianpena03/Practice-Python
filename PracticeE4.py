@@ -65,3 +65,13 @@ with open ("20New.txt", "r") as w_20New:
 #     with open("PracticeSummation.txt", "w+") as f:
 #         f.write(n)
 
+stri = ["AABBCCC"]
+def DoubleChar(stri):
+    #dict = {}
+    # counter = 0
+    # iterate through string
+        # if character is the same:
+        #   counter increases
+        # if character is not the same:
+        #   put counter in a dictionary as value with key as [i]
+        # counter resets to 0

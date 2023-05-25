@@ -16,4 +16,4 @@ with open("20File.txt", "r") as f:
 with open("20New.txt", "r") as w:
     content = w.read()
     print(content)
-
+    
