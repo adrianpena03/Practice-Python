@@ -5,16 +5,9 @@
 # def twoSum(target, num):
 #     for i in num:
 #         for j in num:
-#             if num[i] + num[j] == target:
-#                 return i, j
+#             if i + j == target:
+#                 return num[i], num[j]
 #             return "Not Found"
 
 # print(twoSum(target, num))
-
-
-# WIP
-
-from E3 import Factorial as F
-
-(F(10))
 
