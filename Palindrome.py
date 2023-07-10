@@ -10,9 +10,8 @@ def is_palindrome(word):
         end -= 1
     return True
 
-#print(is_palindrome("rotor"))
+print(is_palindrome("rotor"))
 
-word = "Aka"
 
 def pal(word):
     og_word = word.lower()
@@ -20,4 +19,5 @@ def pal(word):
     if og_word == new_word:
         return True
     return False
-print(pal(word))
+print(pal("Aka"))
+
