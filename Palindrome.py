@@ -19,5 +19,6 @@ def pal(word):
     if og_word == new_word:
         return True
     return False
+
 print(pal("Aka"))
 
