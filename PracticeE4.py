@@ -64,3 +64,4 @@ def CreateTxtWn(n):
     n = int(input("Give me a number. "))
     with open("PracticeSummation.txt", "w+") as f:
         f.write(n)
+

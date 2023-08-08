@@ -23,3 +23,5 @@ with open('19File.txt', 'r') as file:
 print("The first list is:", list_1)
 print("The second list is:", list_2)
 print("The third list is:", list_3)
+
+

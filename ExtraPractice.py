@@ -140,13 +140,16 @@ num = 1009
 def format_number(num):
     if num < 0:
         return "Use a positive number."
+    
     num_str = str(num)
     new_num = ''
     reverse_string = num_str[::-1]
+
     for i in range(len(reverse_string)):
         if i % 3 == 0 and i != 0:
             new_num = reverse_string[i] + "," + new_num
             continue
+
         new_num = reverse_string[i] + new_num
     return new_num
 
