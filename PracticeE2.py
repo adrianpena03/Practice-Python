@@ -17,24 +17,24 @@
 # only eights and nines as arguments and returns the biggest number of 
 # consecutive eights in the string
 
-# bin = "998889"
+bin = "998889"
 
-# def Eight_Count(bin):
-#     count = 0
-#     biggest = 0
-#     for i in bin:
-#         if i == "8":
-#             count += 1
-#         else:
-#             if count >= biggest:
-#                 biggest = count
-#             count = 0
-#         if count >= biggest:
-#             biggest = count
-#     return biggest            
+def Eight_Count(bin):
+    count = 0
+    biggest = 0
+    for i in bin:
+        if i == "8":
+            count += 1
+        else:
+            if count >= biggest:
+                biggest = count
+            count = 0
+        if count >= biggest:
+            biggest = count
+    return biggest            
 
-# result = Eight_Count(bin)
-# print(result)
+result = Eight_Count(bin)
+print(result)
 
 # def eight_count(bin):
 #      cons = 0
